@@ -1,0 +1,50 @@
+@import '@/styles/settings/mixins';
+
+.navigation {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+
+    width: 100vw;
+
+    display: flex;
+    place-content: center;
+
+    background-color: #FDBAC4;
+    border-radius: 10% 10% 0% 0%;
+
+    & > .list {
+        @include non-list;
+
+        width: 90%;
+
+        display: flex;
+        place-content: center space-evenly;
+        place-items: center;
+
+        & > .item {
+            position: relative;
+            z-index: 100;
+
+            & > .link {
+                position: relative;
+
+                width: 55px;
+                height: 55px;
+
+                display: block;
+                font-size: 2.4rem;
+                text-align: center;
+                line-height: 5.6rem;
+                color: #240106;
+                border-radius: 50%;
+            }
+
+            & > .active {
+                background-color: #FA526B;
+                filter: drop-shadow(0 0.75rem 0.75rem #A2051D);
+            }
+        }
+    }
+}

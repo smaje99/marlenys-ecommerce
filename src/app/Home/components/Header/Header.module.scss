@@ -1,0 +1,36 @@
+@import '@/styles/settings/typography';
+
+.header {
+    width: 100vw;
+    height: 80vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+
+    box-sizing: border-box;
+    background-color: #FA526B;
+}
+
+.brand {
+    font-size: 50pt;
+    font-family: $brand-font;
+    position: relative;
+
+    &:before {
+        content: 'Lencería';
+        position: absolute;
+        top: -2rem;
+        font-size: 18pt;
+    }
+}
+
+.slogan {
+    display: inline-block;
+    width: 90%;
+    font-family: $title-font;
+    font-size: 16pt;
+    text-align: center;
+}

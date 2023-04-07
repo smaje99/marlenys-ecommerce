@@ -1,13 +1,39 @@
+@import './settings/typography';
+
+@font-face {
+    font-family: DellaRespira;
+    src: url('/assets/fonts/DellaRespira-Regular.woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src:
+        local('OpenSans'),
+        local('Open Sans'),
+        url('/assets/fonts/OpenSans-Regular.woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: LittleDaysAlt;
+    src: url('/assets/fonts/Little-Days-Alt.ttf');
+    font-display: fallback;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: $body-font;
     background-color: #FEEEF0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title-font);
+    font-family: $title-font;
 }

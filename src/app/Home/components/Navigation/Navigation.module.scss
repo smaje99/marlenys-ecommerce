@@ -1,0 +1,30 @@
+@import '@/styles/settings/typography';
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: transparent;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+}
+
+.brand {
+    font-size: 16pt;
+    font-family: $brand-font;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+}
+
+.search {
+    font-size: 12pt;
+}

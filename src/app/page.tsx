@@ -1,8 +1,9 @@
-import { Header } from './Home/components';
+import { Header, Navigation } from './Home/components';
 
 const Home = () => {
     return (
         <>
+            <Navigation />
             <Header />
         </>
     )

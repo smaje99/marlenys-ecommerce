@@ -1,8 +1,9 @@
 'use client';
 
 import { useCallback, useMemo } from 'react';
-import { BsCart2, BsHouse, BsHandbag } from "react-icons/bs";
-import { RxPerson } from 'react-icons/rx';
+import {
+    BsFillCartFill, BsHouseFill, BsFillSuitHeartFill, BsPersonFill
+} from "react-icons/bs";
 import { IconType } from 'react-icons';
 
 import { NavLink } from '@/components/NavLink';
@@ -19,10 +20,10 @@ type Navigation = {
 
 const Navigator: React.FC<Props> = () => {
     const navigations = useMemo<Navigation[]>(() => [
-        { route: Routes.HOME, Icon: BsHouse },
-        { route: Routes.CATALOG, Icon: BsHandbag },
-        { route: Routes.SHOPPING_CART, Icon: BsCart2 },
-        { route: Routes.PROFILE, Icon: RxPerson },
+        { route: Routes.HOME, Icon: BsHouseFill },
+        { route: Routes.WISH_LIST, Icon: BsFillSuitHeartFill },
+        { route: Routes.SHOPPING_CART, Icon: BsFillCartFill },
+        { route: Routes.PROFILE, Icon: BsPersonFill },
     ], []);
 
     const classNameActive = useCallback<(active: boolean) => string>((active) => (

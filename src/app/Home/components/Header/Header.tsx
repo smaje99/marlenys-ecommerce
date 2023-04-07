@@ -1,6 +1,7 @@
 import Balancer from 'react-wrap-balancer'
 
 import styles from './Header.module.scss';
+import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
             </h1>
             <span className={styles.slogan}>
                 <Balancer>
-                    Descubre la nueva forma de experimentar tu sensualidad<br />
+                    Descubre la nueva forma de experimentar tu sensualidad,
                     diseñada para mujeres como tú y como yo.
                 </Balancer>
             </span>

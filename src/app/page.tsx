@@ -1,10 +1,13 @@
-import { Header, Navigation } from './Home/components';
+import type { NextPage } from 'next';
 
-const Home = () => {
+import { Header, Navigation, Catalog } from './Home/components';
+
+const Home: NextPage = () => {
     return (
         <>
             <Navigation />
             <Header />
+            <Catalog />
         </>
     )
 }

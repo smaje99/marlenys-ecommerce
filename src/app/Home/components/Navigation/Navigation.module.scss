@@ -12,12 +12,12 @@
     align-items: center;
 
     background-color: transparent;
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
     box-sizing: border-box;
 }
 
 .brand {
-    font-size: 16pt;
+    font-size: 18pt;
     font-family: $brand-font;
     font-weight: 700;
     text-decoration: none;
@@ -26,5 +26,6 @@
 }
 
 .search {
-    font-size: 12pt;
+    font-size: 14pt;
+    font-weight: 700;
 }

@@ -1,0 +1,25 @@
+.catalog {
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 7.4rem;
+    padding: 2rem 0;
+
+    &> .title {
+        font-size: 20pt;
+    }
+
+    &-store {
+        display: grid;
+        grid-gap: 3.2rem 2rem;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+        grid-auto-flow: dense;
+    }
+
+    &-card {
+        border-radius: 30px;
+        background: #FEEEF0;
+        border: 1px solid #A4606B;
+    }
+}
